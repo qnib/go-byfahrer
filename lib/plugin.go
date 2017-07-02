@@ -81,7 +81,7 @@ func (p *Plugin) Run() {
 }
 
 func (p *Plugin) createProxy(cnt types.ContainerJSON) {
-	imageName, ok := cnt.Config.Labels["org.qnib.go-byfahrer.proxy-image"]
+	imageName, ok := cnt.Config.Labels["org.qnib.byfahrer.proxy-image"]
 	if !ok {
 		p.Log("debug", fmt.Sprintf("Undefined label 'org.qnib.byfahrer.proxy-image' %v", cnt.Config.Labels))
 		return
