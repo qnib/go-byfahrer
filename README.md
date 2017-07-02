@@ -5,8 +5,8 @@ Start a reverse-proxy to terminate SSL for those services, which do not deal wit
 
 It's just a PoC hack for now, there are a couple of known limitation...
 
-- [] proxy containers are not killed, when the service is killed they are hooked into
-- [] error handling is not done propperly
+- [ ] proxy containers are not killed, when the service is killed they are hooked into
+- [ ] error handling is not done propperly
 
 ## Example
 
